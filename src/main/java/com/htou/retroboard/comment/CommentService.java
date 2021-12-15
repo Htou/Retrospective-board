@@ -1,18 +1,17 @@
 package com.htou.retroboard.comment;
 
 import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.logging.Logger;
-
 @Service
 @Transactional(readOnly = true)
 public class CommentService {
 
-    private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(CommentService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CommentService.class);
 
     private final CommentRepository commentRepository;
 
@@ -30,5 +29,4 @@ public class CommentService {
         LocalDate localDate = LocalDate.now();
         return commentRepository.findByCreatedYearAndMonthAndDay(localDate.getYear(), localDate.getMonth().getValue(), localDate.getDayOfMonth());
     }
-
 }
