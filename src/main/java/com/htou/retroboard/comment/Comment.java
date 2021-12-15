@@ -1,4 +1,4 @@
-package comment;
+package com.htou.retroboard.comment;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
