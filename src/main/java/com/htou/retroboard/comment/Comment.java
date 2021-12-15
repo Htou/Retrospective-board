@@ -10,7 +10,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "comments")
+@Table(name = "comment")
 @EntityListeners(AuditingEntityListener.class)
 @Data
 public class Comment {
