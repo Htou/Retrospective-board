@@ -1,4 +1,4 @@
-package com.htou.Retroboard;
+package com.htou.retroboard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
